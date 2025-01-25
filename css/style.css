@@ -29,3 +29,8 @@ a{
         color: white;
     }
 }
+
+#hotel-slider{
+    overflow: auto;
+    white-space: nowrap;
+}
