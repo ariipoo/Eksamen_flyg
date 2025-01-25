@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat" , serif;
+}
+
+img{
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+}
+
+#global-header{
+    color: #027792;
+}
+
+#global-footer{
+    background-color: #252525;
+    color: white;
+    a{
+        color: white;
+    }
+}
