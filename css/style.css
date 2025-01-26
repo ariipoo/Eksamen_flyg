@@ -34,3 +34,15 @@ a{
     overflow: auto;
     white-space: nowrap;
 }
+
+#breadcrumbs{
+    width: 100%;
+    ol{
+        overflow: auto;
+        white-space: nowrap;
+        display: flex;
+        list-style: none;
+        gap: 0.3rem;
+        padding: 0;
+    }
+}
