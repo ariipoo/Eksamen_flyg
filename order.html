@@ -14,232 +14,233 @@
     <title>Eksamen | Order</title>
 </head>
 <body>
-    <header id="global-header">
-        <nav>
-            <ul>
-                <li><a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li><a href="order.html"><i class="fa-regular fa-user"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-            </ul>
-            <ul>
-                <li><a href="index.html"><img src="img/fav.png" alt=""></a></li>
-                <li><a href="index.html#tips">Tips og inspirasjon</a></li>
-                <li><a href="hotell.html">Hotell</a></li>
-                <li><a href="https://www.norwegian.no" target="_blank">Fly</a></li>
-                <li><a href="#global-footer">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <nav id="breadcrumbs">
-            <ol itemscope itemtype="https://schema.org/BreadcrumbList">
-                <li itemprop="itemListElement" itemscope
-                    itemtype="https://schema.org/ListItem">
-                  <a itemprop="item" href="index.html#bestillingskjema">
-                  <span itemprop="name">Søk <i class="fa-solid fa-greater-than"></i></span></a>
-                  <meta itemprop="position" content="1">
-                </li>
-                <li itemprop="itemListElement" itemscope
-                    itemtype="https://schema.org/ListItem">
-                  <a itemprop="item" href="hotell.html">
-                  <span itemprop="name">Søkeresultater <i class="fa-solid fa-greater-than"></i></span></a>
-                  <meta itemprop="position" content="2">
-                </li>
-                <li itemprop="itemListElement" itemscope
-                    itemtype="https://schema.org/ListItem">
-                  <a itemprop="item" href="hotell.html#room">
-                  <span itemprop="name">Romtype <i class="fa-solid fa-greater-than"></i></span></a>
-                  <meta itemprop="position" content="3">
-                </li>
-                <li itemprop="itemListElement" itemscope
-                    itemtype="https://schema.org/ListItem">
-                  <a itemprop="item" href="https://www.norwegian.no" target="_blank">
-                  <span itemprop="name">Fly <i class="fa-solid fa-greater-than"></i></span></a>
-                  <meta itemprop="position" content="4">
-                </li>
-                <li itemprop="itemListElement" itemscope
-                    itemtype="https://schema.org/ListItem">
-                  <a itemprop="item" href="#">
-                  <span itemprop="name">Tillegg <i class="fa-solid fa-greater-than"></i></span></a>
-                  <meta itemprop="position" content="5">
-                </li>
-                <li itemprop="itemListElement" itemscope
-                    itemtype="https://schema.org/ListItem">
-                  <a itemprop="item" href="order.html">
-                  <span itemprop="name">OPPLYSNINGER <i class="fa-solid fa-greater-than"></i></span></a>
-                  <meta itemprop="position" content="6">
-                </li>
-                <li itemprop="itemListElement" itemscope
-                    itemtype="https://schema.org/ListItem">
-                  <a itemprop="item" href="#global-footer">
-                  <span itemprop="name">Bestill</span></a>
-                  <meta itemprop="position" content="7">
-                </li>
-              </ol>
-        </nav>
-        <section>
-            <h1>Oppgi dine bestillingsopplysninger</h1>
-            <form>
-                <fieldset>
-                    <legend>Voksen 18+ Hovedbestiller</legend>
-                    <label>FORNAVN (IFØLGE PASS):</label>
-                    <input type="text" pattern="[A-Za-zæøåÆØÅ]{1,32}" required>
-
-                    <label>ETTERNAVN (IFØLGE PASS):</label>
-                    <input type="text" pattern="[A-Za-zæøåÆØÅ]{1,32}" required>
-                    
-                    <label>FØDSELSDATO:</label>
-                    <input type="number" placeholder="DD" min="01" max="31">
-                    <input type="number" placeholder="MM" min="01" max="12">
-                    <input type="number" placeholder="ÅÅÅÅ" min="1930" max="2006">        
-                    
-                    <label>KJØNN:</label>
-                    <ul>
-                        <li>
-                            <input type="radio" name="gender" id="female1">
-                            <label for="female1">KVINNE</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="gender" id="male1">
-                            <label for="male1">MANN</label>
-                        </li>
-                    </ul>
-
-                    <label>E-POSTADRESSE:</label>
-                    <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
-                    
-                    <label>TELEFONNUMMER:</label>
-                    <input type="tel" pattern="[0-9]{8,12}" required>
-                    
-                    <label>GATEADRESSE:</label>
-                    <input type="text" required>
-                    
-                    <label>POSTNUMMER:</label>
-                    <input type="number" min="1000" max="9999" required>
-                    
-                    <label>POSTSTED:</label>
-                    <input type="text" required>
-                    
-                    <label for="land">LAND:</label>
-                    <select name="land" id="land">
-                        <option value="" disabled selected>Velg et land</option>
-                        <option value="norway">Norge</option>
-                        <option value="sweden">Sverige</option>
-                        <option value="denmark">Danmark</option>
-                        <option value="finland">finland</option>
-                    </select>
-                </fieldset>
-                <fieldset>
-                    <legend>Voksen 18+</legend>
-                    <label>FORNAVN (IFØLGE PASS):</label>
-                    <input type="text" pattern="[A-Za-zæøåÆØÅ]{1,32}" required>
-                    
-                    <label>ETTERNAVN (IFØLGE PASS):</label>
-                    <input type="text" pattern="[A-Za-zæøåÆØÅ]{1,32}" required>
-                    
-                    <label>FØDSELSDATO:</label>
-                    <input type="number" placeholder="DD" min="01" max="31">
-                    <input type="number" placeholder="MM" min="01" max="12">
-                    <input type="number" placeholder="ÅÅÅÅ" min="1930" max="2006">
-                    
-                    <label>KJØNN:</label>
-                    <ul>
-                        <li>
-                            <input type="radio" name="gender" id="female2">
-                            <label for="female2">KVINNE</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="gender" id="male2">
-                            <label for="male2">MANN</label>
-                        </li>
-                    </ul>
-                </fieldset>
-            </form>
-        </section>
-        <section>
-            <details>
-                <summary>Dine velg <i class="fa-solid fa-greater-than"></i></summary>
-                <img src="img/landscape-2016308_640.jpg" alt="beach">
-                <h2>Parga beach</h2>
-                <ul>
-                    <li><i class="fa-solid fa-sun"></i></li>
-                    <li><i class="fa-solid fa-sun"></i></li>
-                    <li><i class="fa-solid fa-sun"></i></li>
-                    <li><i class="fa-solid fa-sun"></i></li>
-                    <li><i class="fa-regular fa-sun"></i></li>
+    <div id="container">
+        <header id="global-header">
+            <nav>
+                <a href="index.html"><img src="img/fav.png" alt="logo"></a>
+                <ul id="right">
+                    <li><a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="order.html"><i class="fa-regular fa-circle-user"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
                 </ul>
-                <ul>
-                    <li><i class="fa-solid fa-location-dot"></i> Hellas, Parga</li>
-                    <li><i class="fa-regular fa-calendar"></i> Man 5 mai - man 12 mai 2025</li>
-                    <li><i class="fa-regular fa-calendar"></i> 2 Voksne</li>
-                    <li><i class="fa-solid fa-bed"></i> Deluxerom, Balkong og ikke spesifisert utsikt.</li>
-                    <li><i class="fa-solid fa-utensils"></i> Frokustbuffé</li>
-                    <li><i class="fa-solid fa-plane-departure"></i> Oslo Lufthavn - Preveza</li>
-                    <li>22 003,-</li>
-                    <li>19 803,-</li>
+                <ul id="left">
+                    <li><a href="#tips">Tips og inspirasjon</a></li>
+                    <li><a href="hotell.html">Hotell</a></li>
+                    <li><a href="https://www.norwegian.no" target="_blank">Fly</a></li>
+                    <li><a href="#global-footer">Kontakt</a></li>
                 </ul>
-            </details>
-            
-        </section>
-    </main>
-    <footer id="global-footer">
-        <section>
-            <h3>SPRÅK</h3>
-            <ul>
-                <li>
-                    <img src="flag/sweden.png" alt="sweden">
-                    Sverige
-                </li>
-                <li>
-                    <img src="flag/denmark.png" alt="denmark">
-                    Danmark
-                </li>
-                <li>
-                    <img src="flag/norway.png" alt="norway">
-                    Norge
-                </li>
-                <li>
-                    <img src="flag/finland.png" alt="finland">
-                    Suomi
-                </li>
-                <li>
-                    <img src="flag/netherlands.png" alt="netherlands">
-                    Nederland
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h3>BETALINGSMETODER</h3>
-            <ul>
-                <li><a href="#"><i class="fa-brands fa-cc-visa"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-cc-mastercard"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-cc-paypal"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-cc-apple-pay"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-cc-amazon-pay"></i></a></li>
-            </ul>
-        </section>
-        <section>
-            <h3>NYHETER & TILBUD</h3>
-        </section>
-        <section>
-            <h3>KUNDESERVICE</h3>
-            <ul>
-                <li><a href="#">Spørsmål og Svar</a></li>
-                <li><a href="#">Chat</a></li>
-                <li><a href="#">Kontakt</a></li>
-                <li><a href="#">Tilgjenglighetsærklering</a></li>
-            </ul>
-        </section>
-        <section>
-            <h3>SOSIALE MEDIER</h3>
-            <ul>
-                <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://www.pinterest.com" target="_blank"><i class="fa-brands fa-pinterest"></i></a></li>
-                <li><a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
-                <li><a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
-            </ul>
-        </section>
-    </footer>
+            </nav>
+        </header>
+        <main>
+            <nav id="breadcrumbs">
+                <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                      <a itemprop="item" href="index.html#bestillingskjema">
+                      <span itemprop="name">Søk <i class="fa-solid fa-greater-than"></i></span></a>
+                      <meta itemprop="position" content="1">
+                    </li>
+                    <li itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                      <a itemprop="item" href="hotell.html">
+                      <span itemprop="name">Søkeresultater <i class="fa-solid fa-greater-than"></i></span></a>
+                      <meta itemprop="position" content="2">
+                    </li>
+                    <li itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                      <a itemprop="item" href="hotell.html#room">
+                      <span itemprop="name">Romtype <i class="fa-solid fa-greater-than"></i></span></a>
+                      <meta itemprop="position" content="3">
+                    </li>
+                    <li itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                      <a itemprop="item" href="https://www.norwegian.no" target="_blank">
+                      <span itemprop="name">Fly <i class="fa-solid fa-greater-than"></i></span></a>
+                      <meta itemprop="position" content="4">
+                    </li>
+                    <li itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                      <a itemprop="item" href="#">
+                      <span itemprop="name">Tillegg <i class="fa-solid fa-greater-than"></i></span></a>
+                      <meta itemprop="position" content="5">
+                    </li>
+                    <li itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                      <a itemprop="item" href="order.html">
+                      <span itemprop="name">OPPLYSNINGER <i class="fa-solid fa-greater-than"></i></span></a>
+                      <meta itemprop="position" content="6">
+                    </li>
+                    <li itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                      <a itemprop="item" href="#global-footer">
+                      <span itemprop="name">Bestill</span></a>
+                      <meta itemprop="position" content="7">
+                    </li>
+                  </ol>
+            </nav>
+            <section id="detailsseksjon">
+                <details>
+                    <summary>Dine velg <i class="fa-solid fa-greater-than"></i></summary>
+                    <img src="img/landscape-2016308_640.jpg" alt="beach">
+                    <h2>Parga beach</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-sun"></i></li>
+                        <li><i class="fa-solid fa-sun"></i></li>
+                        <li><i class="fa-solid fa-sun"></i></li>
+                        <li><i class="fa-solid fa-sun"></i></li>
+                        <li><i class="fa-regular fa-sun"></i></li>
+                    </ul>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> Hellas, Parga</li>
+                        <li><i class="fa-regular fa-calendar"></i> Man 5 mai - man 12 mai 2025</li>
+                        <li><i class="fa-regular fa-calendar"></i> 2 Voksne</li>
+                        <li><i class="fa-solid fa-bed"></i> Deluxerom, Balkong og ikke spesifisert utsikt.</li>
+                        <li><i class="fa-solid fa-utensils"></i> Frokustbuffé</li>
+                        <li><i class="fa-solid fa-plane-departure"></i> Oslo Lufthavn - Preveza</li>
+                        <li>22 003,-</li>
+                        <li>19 803,-</li>
+                    </ul>
+                </details>
+            </section>
+            <section>
+                <h1>Oppgi dine bestillingsopplysninger</h1>
+                <form>
+                    <fieldset>
+                        <legend>Voksen 18+ Hovedbestiller</legend>
+                        <label>FORNAVN (IFØLGE PASS):</label>
+                        <input type="text" pattern="[A-Za-zæøåÆØÅ]{1,32}" required>
+    
+                        <label>ETTERNAVN (IFØLGE PASS):</label>
+                        <input type="text" pattern="[A-Za-zæøåÆØÅ]{1,32}" required>
+                        
+                        <label>FØDSELSDATO:</label>
+                        <input type="number" placeholder="DD" min="01" max="31">
+                        <input type="number" placeholder="MM" min="01" max="12">
+                        <input type="number" placeholder="ÅÅÅÅ" min="1930" max="2006">        
+                        
+                        <label>KJØNN:</label>
+                        <ul>
+                            <li>
+                                <input type="radio" name="gender" id="female1">
+                                <label for="female1">KVINNE</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="gender" id="male1">
+                                <label for="male1">MANN</label>
+                            </li>
+                        </ul>
+    
+                        <label>E-POSTADRESSE:</label>
+                        <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                        
+                        <label>TELEFONNUMMER:</label>
+                        <input type="tel" pattern="[0-9]{8,12}" required>
+                        
+                        <label>GATEADRESSE:</label>
+                        <input type="text" required>
+                        
+                        <label>POSTNUMMER:</label>
+                        <input type="number" min="1000" max="9999" required>
+                        
+                        <label>POSTSTED:</label>
+                        <input type="text" required>
+                        
+                        <label for="land">LAND:</label>
+                        <select name="land" id="land">
+                            <option value="" disabled selected>Velg et land</option>
+                            <option value="norway">Norge</option>
+                            <option value="sweden">Sverige</option>
+                            <option value="denmark">Danmark</option>
+                            <option value="finland">finland</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Voksen 18+</legend>
+                        <label>FORNAVN (IFØLGE PASS):</label>
+                        <input type="text" pattern="[A-Za-zæøåÆØÅ]{1,32}" required>
+                        
+                        <label>ETTERNAVN (IFØLGE PASS):</label>
+                        <input type="text" pattern="[A-Za-zæøåÆØÅ]{1,32}" required>
+                        
+                        <label>FØDSELSDATO:</label>
+                        <input type="number" placeholder="DD" min="01" max="31">
+                        <input type="number" placeholder="MM" min="01" max="12">
+                        <input type="number" placeholder="ÅÅÅÅ" min="1930" max="2006">
+                        
+                        <label>KJØNN:</label>
+                        <ul>
+                            <li>
+                                <input type="radio" name="gender" id="female2">
+                                <label for="female2">KVINNE</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="gender" id="male2">
+                                <label for="male2">MANN</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer id="global-footer">
+            <section>
+                <h3>SPRÅK</h3>
+                <ul>
+                    <li>
+                        <img src="flag/sweden.png" alt="sweden">
+                        Sverige
+                    </li>
+                    <li>
+                        <img src="flag/denmark.png" alt="denmark">
+                        Danmark
+                    </li>
+                    <li>
+                        <img src="flag/norway.png" alt="norway">
+                        Norge
+                    </li>
+                    <li>
+                        <img src="flag/finland.png" alt="finland">
+                        Suomi
+                    </li>
+                    <li>
+                        <img src="flag/netherlands.png" alt="netherlands">
+                        Nederland
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>BETALINGSMETODER</h3>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-cc-visa"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-cc-mastercard"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-cc-paypal"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-cc-apple-pay"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-cc-amazon-pay"></i></a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>NYHETER & TILBUD</h3>
+            </section>
+            <section>
+                <h3>KUNDESERVICE</h3>
+                <ul>
+                    <li><a href="#">Spørsmål og Svar</a></li>
+                    <li><a href="#">Chat</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Tilgjenglighetsærklering</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>SOSIALE MEDIER</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.pinterest.com" target="_blank"><i class="fa-brands fa-pinterest"></i></a></li>
+                    <li><a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+                    <li><a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </section>
+        </footer>
+    </div>
 </body>
 </html>

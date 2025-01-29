@@ -14,219 +14,210 @@
     <title>Eksamen | Forside</title>
 </head>
 <body>
-    <header id="global-header">
-        <nav>
-            <ul>
-                <li><a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li><a href="order.html"><i class="fa-regular fa-user"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-            </ul>
-            <ul>
-                <li><a href="index.html"><img src="img/fav.png" alt=""></a></li>
-                <li><a href="#tips">Tips og inspirasjon</a></li>
-                <li><a href="hotell.html">Hotell</a></li>
-                <li><a href="https://www.norwegian.no" target="_blank">Fly</a></li>
-                <li><a href="#global-footer">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <header>
-            <section>
-                <picture>
-                    <img src="img/sea-4768869_1920.jpg" alt="sea">
-                </picture>
-            </section>
-            <section id="bestillingskjema">
-                <h1>Bestillingskjema</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#"><i class="fa-solid fa-suitcase"></i> Fly + Hotell </a></li>
-                        <li><a href="#"><i class="fa-solid fa-plane"></i> Fly </a></li>
-                        <li><a href="#"><i class="fa-solid fa-city"></i> Storby </a></li>
-                        <li><a href="#"><i class="fa-solid fa-person-skiing"></i> Ski </a></li>
-                        <li><a href="#"><i class="fa-solid fa-map-location-dot"></i> Kombinasjonsreiser </a></li>
-                    </ul>
-                </nav>
-                <form>
-                    <label for="fra">
-                        Fra
-                        <select name="fra" id="fra">
-                            <option value="oslo">Oslo Lufthavn</option>
-                            <option value="torp">Torp Sandefjord</option>
-                            <option value="bergen">Bergen Lufthavn</option>
-                            <option value="alta">Alta Lufthavn</option>
-                        </select>
-                    </label>
-                    <label for="til">
-                        Til
-                        <select name="til" id="til">
-                            <option value="albania">Albania</option>
-                            <option value="danmark">Danmark</option>
-                            <option value="finland">Finland</option>
-                            <option value="hellas">Hellas</option>
-                        </select>
-                    </label>
-                    <label for="lengde">
-                        Reiselengde
-                        <select name="lengde" id="lengde">
-                            <option value="mindre-uke">Mindre enn 1 uke</option>
-                            <option value="1uke">1 Uke</option>
-                            <option value="2uker">2 Uker</option>
-                            <option value="mer-uker">Mer enn 2 uker</option>
-                        </select>
-                    </label>
-                    <label>
-                        Velg dato
-                        <input type="date" min="2025-01-01" max="2026-12-31">
-                    </label>
-                    <label>
-                        <input type="number" min="1" max="20" placeholder="2">
-                    </label>
-                    <label>
-                        <input type="submit" value="Søk">
-                    </label>
-                </form>
-            </section>
+    <div class="container">
+        <header id="global-header">
+            <nav>
+                <a href="index.html"><img src="img/fav.png" alt="logo"></a>
+                <ul id="right">
+                    <li><a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="order.html"><i class="fa-regular fa-circle-user"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                </ul>
+                <ul id="left">
+                    <li><a href="#tips">Tips og inspirasjon</a></li>
+                    <li><a href="hotell.html">Hotell</a></li>
+                    <li><a href="https://www.norwegian.no" target="_blank">Fly</a></li>
+                    <li><a href="#global-footer">Kontakt</a></li>
+                </ul>
+            </nav>
         </header>
-        <section>
-            <h2>Kampanjeseksjon</h2>
-            <picture>
-                <img src="img/holiday-2733322_1280.jpg" alt="holiday">
-            </picture>
-            <p>Bestill sommerens beste uke</p>
-            <p>Fly + hotell, 7 dager</p>
-            <p>Fra 3298,-</p>
-            <a href="hotell.html">Bestill i dag</a>
-        </section>
-        <section>
-            <h2>Tilbudsseksjon</h2>
-            <article>
-                <h3>Få ekslusive tilbud</h3>
-                <a href="#">Logg inn/opprett konto of få rabattkoder <i class="fa-solid fa-angles-right"></i></a>
-            </article>
-            <article>
-                <h3>Billige resteplasser</h3>
-                <a href="#">Opptil 50% rabatt <i class="fa-solid fa-angles-right"></i></a>
-            </article>
-            <article>
-                <h3>Mars - spar opptil 5000,-</h3>
-                <a href="#">Sikre deg et ferie kupp <i class="fa-solid fa-angles-right"></i></a>
-            </article>
-        </section>
-        <section id="tips">
-            <h2>Tips & inspirasjon</h2>
-            <article>
-                <picture>
+        <main>
+            <header id="main-header">
+                <section id="banner-img">
+                    <h1>Bestillingskjema</h1>
+                </section>
+                <section id="bestillingskjema">
+                    <nav id="tophalf">
+                        <ul>
+                            <li><a href="#" class="underline active"><i class="fa-solid fa-suitcase"></i> Fly + Hotell </a></li>
+                            <li><a href="#" class="underline"><i class="fa-solid fa-plane"></i> Fly </a></li>
+                            <li><a href="#" class="underline"><i class="fa-solid fa-city"></i> Storby </a></li>
+                            <li><a href="#" class="underline"><i class="fa-solid fa-person-skiing"></i> Ski </a></li>
+                            <li><a href="#" class="underline"><i class="fa-solid fa-map-location-dot"></i> Kombinasjonsreiser </a></li>
+                        </ul>
+                    </nav>
+                    <form id="bottomhalf">
+                        <label class="fieldset" for="fra" id="fra-label">
+                            <span>Fra</span>
+                            <select name="fra" id="fra">
+                                <option value="oslo">Oslo Lufthavn</option>
+                                <option value="torp">Torp Sandefjord</option>
+                                <option value="bergen">Bergen Lufthavn</option>
+                                <option value="alta">Alta Lufthavn</option>
+                            </select>
+                        </label>
+                        <label class="fieldset" for="til" id="til-label">
+                            <span>Til</span>
+                            <select name="til" id="til">
+                                <option value="albania">Albania</option>
+                                <option value="danmark">Danmark</option>
+                                <option value="finland">Finland</option>
+                                <option value="hellas">Hellas</option>
+                            </select>
+                        </label>
+                        <label class="fieldset" for="lengde" id="lengde-label">
+                            <span>Reiselengde</span>
+                            <select name="lengde" id="lengde">
+                                <option value="mindre-uke">Mindre enn 1 uke</option>
+                                <option value="1uke">1 Uke</option>
+                                <option value="2uker">2 Uker</option>
+                                <option value="mer-uker">Mer enn 2 uker</option>
+                            </select>
+                        </label>
+                        <label class="fieldset" id="dato-label">
+                            <span>Velg dato</span>
+                            <input type="date" min="2025-01-01" max="2026-12-31">
+                        </label>
+                        <label class="fieldset" id="antall-label">
+                            <span>Antall reisende</span>
+                            <input type="number" min="1" max="20" placeholder="2">
+                        </label>
+                        <label class="fieldset" id="søk-label">
+                            <input type="submit" value="Søk">
+                        </label>
+                    </form>
+                </section>
+            </header>
+            <section id="kampanjeseksjon">
+                <article id="kampanjearticle">
+                    <h2>Bestill sommerens beste uke</h2>
+                    <p>Fly + hotell, 7 dager</p>
+                    <p id="cost">Fra 3298,-</p>
+                </article>
+                
+                <a href="hotell.html">Bestill i dag</a>
+            </section>
+            <section id="tilbudsseksjon">
+                <h2>Tilbudsseksjon</h2>
+                <div id="divbud">
+                    <article class="tilbudarticle">
+                        <h3>Få ekslusive tilbud</h3>
+                        <a href="#">Logg inn/opprett konto of få rabattkoder <i class="fa-solid fa-angles-right"></i></a>
+                    </article>
+                    <article class="tilbudarticle">
+                        <h3>Billige resteplasser</h3>
+                        <a href="#">Opptil 50% rabatt <i class="fa-solid fa-angles-right"></i></a>
+                    </article>
+                    <article class="tilbudarticle">
+                        <h3>Mars - spar opptil 5000,-</h3>
+                        <a href="#">Sikre deg et ferie kupp <i class="fa-solid fa-angles-right"></i></a>
+                    </article>
+                </div>
+            </section>
+            <section id="tips">
+                <h2>Tips & inspirasjon</h2>
+                <article class="tips">
+                    <p id="ukensdeal">Ukens Deal</p>
                     <img src="img/beach-6514331_640.jpg" alt="article1">
-                </picture>
-                <h3>Greske favoritter</h3>
-                <p>Akkurat nå får du 1000,- i rabatt per bestilling til bl.a Parga, Sivota, Lefkas, Korfu og Kalamata i Hellas. Gjelder avreiser o sommer 2025. Kampanjen er gyldig i perioden 3/1 - 12/1-2025. Bruk rabattkoden WEEKDEAL ved bestilling.</p>
-                <a href="#">Fra kr 3970 <i class="fa-solid fa-arrow-right"></i></a>
-            </article>
-            <article>
-                <picture>
+                    <h3>Greske favoritter</h3>
+                    <p>Akkurat nå får du 1000,- i rabatt per bestilling til bl.a Parga, Sivota, Lefkas, Korfu og Kalamata i Hellas. Gjelder avreiser o sommer 2025. Kampanjen er gyldig i perioden 3/1 - 12/1-2025. Bruk rabattkoden WEEKDEAL ved bestilling.</p>
+                    <a href="#">Fra kr 3970 <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+                <article class="tips">
                     <img src="img/beach-1836467_640.jpg" alt="article2">
-                </picture>
-                <h3>Solskinnspriser - bestill i dag!</h3>
-                <p>Spar opptil 45%. Akkurat nå tilbyr vi billige vinterreiser til mange reisemål. Bestill vinterens herligste uke i dag!</p>
-                <a href="#">Fra kr 3203 <i class="fa-solid fa-arrow-right"></i></a>
-            </article>
-            <article>
-                <picture>
+                    <h3>Solskinnspriser - bestill i dag!</h3>
+                    <p>Spar opptil 45%. Akkurat nå tilbyr vi billige vinterreiser til mange reisemål. Bestill vinterens herligste uke i dag!</p>
+                    <a href="#">Fra kr 3203 <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+                <article class="tips">
                     <img src="img/cathedral-427997_640.jpg" alt="article3">
-                </picture>
-                <h3>Storbyferie</h3>
-                <p>Bestill en langhelg og unn deg en flott weekendreise i en storby der du selv velger reiselengde, fly og nøye utvalgte hotell.</p>
-                <a href="#">Les mer <i class="fa-solid fa-arrow-right"></i></a>
-            </article>
-            <article>
-                <picture>
+                    <h3>Storbyferie</h3>
+                    <p>Bestill en langhelg og unn deg en flott weekendreise i en storby der du selv velger reiselengde, fly og nøye utvalgte hotell.</p>
+                    <a href="#">Les mer <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+                <article class="tips">
                     <img src="img/building-7014904_640.jpg" alt="article4">
-                </picture>
-                <h3>Besøk påskefavoritten London</h3>
-                <p>London er en av de mest populære reisemmålene i påsken, kjent for sin unike blanding av historie, kultur og moderne opplevelser.</p>
-                <a href="#">Fra kr 2150 <i class="fa-solid fa-arrow-right"></i></a>
-            </article>
-            <article>
-                <picture>
+                    <h3>Besøk påskefavoritten London</h3>
+                    <p>London er en av de mest populære reisemmålene i påsken, kjent for sin unike blanding av historie, kultur og moderne opplevelser.</p>
+                    <a href="#">Fra kr 2150 <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+                <article class="tips">
+                    <p id="nyhet">Nyhet</p>
                     <img src="img/ski-slope-3223709_640.jpg" alt="article5">
-                </picture>
-                <h3>Skiferie</h3>
-                <p>Drømmer du om puddersnø, frisk fjelluft og fartsfylte nedfarter? Vinteren er endelig her, og det betyr at skisesongen er i full gang!</p>
-                <a href="#">Se alle skistedene <i class="fa-solid fa-arrow-right"></i></a>
-            </article>
-            <article>
-                <picture>
+                    <h3>Skiferie</h3>
+                    <p>Drømmer du om puddersnø, frisk fjelluft og fartsfylte nedfarter? Vinteren er endelig her, og det betyr at skisesongen er i full gang!</p>
+                    <a href="#">Se alle skistedene <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+                <article class="tips">
                     <img src="img/beach-666122_640.jpg" alt="article6">
-                </picture>
-                <h3>Spar opptil 7000,- til sommer</h3>
-                <p>Drømmer du om solfylte dager og eksotiske opplevelser? Nå har du sjansen til å sikre deg din drømmeferie til en fantastisk pris!</p>
-                <a href="#">Les mer <i class="fa-solid fa-arrow-right"></i></a>
-            </article>
-        </section>
-    </main>
-    <footer id="global-footer">
-        <section>
-            <h3>SPRÅK</h3>
-            <ul>
-                <li>
-                    <img src="flag/sweden.png" alt="sweden">
-                    Sverige
-                </li>
-                <li>
-                    <img src="flag/denmark.png" alt="denmark">
-                    Danmark
-                </li>
-                <li>
-                    <img src="flag/norway.png" alt="norway">
-                    Norge
-                </li>
-                <li>
-                    <img src="flag/finland.png" alt="finland">
-                    Suomi
-                </li>
-                <li>
-                    <img src="flag/netherlands.png" alt="netherlands">
-                    Nederland
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h3>BETALINGSMETODER</h3>
-            <ul>
-                <li><a href="#"><i class="fa-brands fa-cc-visa"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-cc-mastercard"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-cc-paypal"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-cc-apple-pay"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-cc-amazon-pay"></i></a></li>
-            </ul>
-        </section>
-        <section>
-            <h3>NYHETER & TILBUD</h3>
-            <span>Meld deg på nyhetsbrev her</span>
-            <input type="email" placeholder="ola@example.com...">
-            <button type="button">Send</button>
-        </section>
-        <section>
-            <h3>KUNDESERVICE</h3>
-            <ul>
-                <li><a href="#">Spørsmål og Svar</a></li>
-                <li><a href="#">Chat</a></li>
-                <li><a href="#">Kontakt</a></li>
-                <li><a href="#">Tilgjenglighetsærklering</a></li>
-            </ul>
-        </section>
-        <section>
-            <h3>SOSIALE MEDIER</h3>
-            <ul>
-                <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://www.pinterest.com" target="_blank"><i class="fa-brands fa-pinterest"></i></a></li>
-                <li><a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
-                <li><a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
-            </ul>
-        </section>
-    </footer>
+                    <h3>Spar opptil 7000,- til sommer</h3>
+                    <p>Drømmer du om solfylte dager og eksotiske opplevelser? Nå har du sjansen til å sikre deg din drømmeferie til en fantastisk pris!</p>
+                    <a href="#">Les mer <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+            </section>
+        </main>
+        <footer id="global-footer">
+            <section id="footer-flag">
+                <h3 id="h3flag">SPRÅK</h3>
+                <ul id="flag-grid">
+                    <li>
+                        <img src="flag/sweden.png" alt="sweden">
+                        Sverige
+                    </li>
+                    <li>
+                        <img src="flag/denmark.png" alt="denmark">
+                        Danmark
+                    </li>
+                    <li>
+                        <img src="flag/norway.png" alt="norway">
+                        Norge
+                    </li>
+                    <li>
+                        <img src="flag/finland.png" alt="finland">
+                        Suomi
+                    </li>
+                    <li>
+                        <img src="flag/netherlands.png" alt="netherlands">
+                        Nederland
+                    </li>
+                </ul>
+            </section>
+            <section id="footer-pay">
+                <h3>BETALINGSMETODER</h3>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-cc-visa"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-cc-mastercard"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-cc-paypal"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-cc-apple-pay"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-cc-amazon-pay"></i></a></li>
+                </ul>
+            </section>
+            <section id="footer-news">
+                <h3>NYHETER & TILBUD</h3>
+                <span>Meld deg på nyhetsbrev her</span>
+                <input type="email" placeholder="ola@example.com...">
+                <button type="button">Send</button>
+            </section>
+            <section id="footer-service">
+                <h3>KUNDESERVICE</h3>
+                <ul>
+                    <li><a href="#">Spørsmål og Svar</a></li>
+                    <li><a href="#">Chat</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Tilgjenglighetsærklering</a></li>
+                </ul>
+            </section>
+            <section id="footer-socials">
+                <h3>SOSIALE MEDIER</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.pinterest.com" target="_blank"><i class="fa-brands fa-pinterest"></i></a></li>
+                    <li><a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+                    <li><a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </section>
+        </footer>
+    </div>
 </body>
 </html>
