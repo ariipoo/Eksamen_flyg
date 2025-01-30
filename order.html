@@ -19,9 +19,9 @@
             <nav>
                 <a href="index.html"><img src="img/fav.png" alt="logo"></a>
                 <ul id="right">
-                    <li><a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><a href="order.html"><i class="fa-regular fa-circle-user"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                    <li class="headericons"><a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li class="headericons"><a href="order.html"><i class="fa-regular fa-circle-user"></i></a></li>
+                    <li class="headericons"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
                 </ul>
                 <ul id="left">
                     <li><a href="#tips">Tips og inspirasjon</a></li>
@@ -67,12 +67,12 @@
                     <li itemprop="itemListElement" itemscope
                         itemtype="https://schema.org/ListItem">
                       <a itemprop="item" href="order.html">
-                      <span itemprop="name">OPPLYSNINGER <i class="fa-solid fa-greater-than"></i></span></a>
+                      <span id="opplysninger" itemprop="name">OPPLYSNINGER <i class="fa-solid fa-greater-than"></i></span></a>
                       <meta itemprop="position" content="6">
                     </li>
                     <li itemprop="itemListElement" itemscope
                         itemtype="https://schema.org/ListItem">
-                      <a itemprop="item" href="#global-footer">
+                      <a itemprop="item" href="order.html#trinn">
                       <span itemprop="name">Bestill</span></a>
                       <meta itemprop="position" content="7">
                     </li>
@@ -80,20 +80,20 @@
             </nav>
             <section id="detailsseksjon">
                 <details>
-                    <summary>Dine velg <i class="fa-solid fa-greater-than"></i></summary>
+                    <summary>Dine valg <i class="fa-solid fa-greater-than"></i></summary>
                     <img src="img/landscape-2016308_640.jpg" alt="beach">
                     <h2>Parga beach</h2>
-                    <ul>
+                    <ul id="sun">
                         <li><i class="fa-solid fa-sun"></i></li>
                         <li><i class="fa-solid fa-sun"></i></li>
                         <li><i class="fa-solid fa-sun"></i></li>
                         <li><i class="fa-solid fa-sun"></i></li>
                         <li><i class="fa-regular fa-sun"></i></li>
                     </ul>
-                    <ul>
+                    <ul id="info">
                         <li><i class="fa-solid fa-location-dot"></i> Hellas, Parga</li>
                         <li><i class="fa-regular fa-calendar"></i> Man 5 mai - man 12 mai 2025</li>
-                        <li><i class="fa-regular fa-calendar"></i> 2 Voksne</li>
+                        <li><i class="fa-regular fa-user"></i> 2 Voksne</li>
                         <li><i class="fa-solid fa-bed"></i> Deluxerom, Balkong og ikke spesifisert utsikt.</li>
                         <li><i class="fa-solid fa-utensils"></i> Frokustbuffé</li>
                         <li><i class="fa-solid fa-plane-departure"></i> Oslo Lufthavn - Preveza</li>
@@ -102,10 +102,10 @@
                     </ul>
                 </details>
             </section>
-            <section>
+            <section id="bestilling">
                 <h1>Oppgi dine bestillingsopplysninger</h1>
                 <form>
-                    <fieldset>
+                    <fieldset class="person">
                         <legend>Voksen 18+ Hovedbestiller</legend>
                         <label>FORNAVN (IFØLGE PASS):</label>
                         <input type="text" pattern="[A-Za-zæøåÆØÅ]{1,32}" required>
@@ -114,12 +114,14 @@
                         <input type="text" pattern="[A-Za-zæøåÆØÅ]{1,32}" required>
                         
                         <label>FØDSELSDATO:</label>
-                        <input type="number" placeholder="DD" min="01" max="31">
-                        <input type="number" placeholder="MM" min="01" max="12">
-                        <input type="number" placeholder="ÅÅÅÅ" min="1930" max="2006">        
+                        <ul class="dob">
+                            <li><input type="number" placeholder="DD" min="01" max="31"></li>
+                            <li><input type="number" placeholder="MM" min="01" max="12"></li>
+                            <li><input type="number" placeholder="ÅÅÅÅ" min="1930" max="2006"></li>
+                        </ul>
                         
                         <label>KJØNN:</label>
-                        <ul>
+                        <ul class="radio">
                             <li>
                                 <input type="radio" name="gender" id="female1">
                                 <label for="female1">KVINNE</label>
@@ -151,10 +153,10 @@
                             <option value="norway">Norge</option>
                             <option value="sweden">Sverige</option>
                             <option value="denmark">Danmark</option>
-                            <option value="finland">finland</option>
+                            <option value="finland">Finland</option>
                         </select>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="person">
                         <legend>Voksen 18+</legend>
                         <label>FORNAVN (IFØLGE PASS):</label>
                         <input type="text" pattern="[A-Za-zæøåÆØÅ]{1,32}" required>
@@ -163,12 +165,14 @@
                         <input type="text" pattern="[A-Za-zæøåÆØÅ]{1,32}" required>
                         
                         <label>FØDSELSDATO:</label>
-                        <input type="number" placeholder="DD" min="01" max="31">
-                        <input type="number" placeholder="MM" min="01" max="12">
-                        <input type="number" placeholder="ÅÅÅÅ" min="1930" max="2006">
-                        
+                        <ul class="dob">
+                            <li><input type="number" placeholder="DD" min="01" max="31"></li>
+                            <li><input type="number" placeholder="MM" min="01" max="12"></li>
+                            <li><input type="number" placeholder="ÅÅÅÅ" min="1930" max="2006"></li>
+                        </ul>
+                                            
                         <label>KJØNN:</label>
-                        <ul>
+                        <ul class="radio">
                             <li>
                                 <input type="radio" name="gender" id="female2">
                                 <label for="female2">KVINNE</label>
@@ -179,13 +183,14 @@
                             </li>
                         </ul>
                     </fieldset>
+                    <button id="trinn" class="button" type="button">Siste trinn <i class="fa-solid fa-arrow-right"></i></button>
                 </form>
             </section>
         </main>
         <footer id="global-footer">
-            <section>
-                <h3>SPRÅK</h3>
-                <ul>
+            <section id="footer-flag">
+                <h3 id="h3flag">SPRÅK</h3>
+                <ul id="flag-grid">
                     <li>
                         <img src="flag/sweden.png" alt="sweden">
                         Sverige
@@ -208,7 +213,7 @@
                     </li>
                 </ul>
             </section>
-            <section>
+            <section id="footer-pay">
                 <h3>BETALINGSMETODER</h3>
                 <ul>
                     <li><a href="#"><i class="fa-brands fa-cc-visa"></i></a></li>
@@ -218,10 +223,16 @@
                     <li><a href="#"><i class="fa-brands fa-cc-amazon-pay"></i></a></li>
                 </ul>
             </section>
-            <section>
+            <section id="footer-news">
                 <h3>NYHETER & TILBUD</h3>
+                <form class="fieldset" action="#">
+                    <label for="email">Meld deg på nyhetsbrev her                    </label>
+                    <input type="email" id="email" name="email" placeholder="ola@example.com...">
+                    <button type="button">Send</button>
+                </form>
+                <a href="#">Kjøp reisegavekort</a>
             </section>
-            <section>
+            <section id="footer-service">
                 <h3>KUNDESERVICE</h3>
                 <ul>
                     <li><a href="#">Spørsmål og Svar</a></li>
@@ -230,7 +241,7 @@
                     <li><a href="#">Tilgjenglighetsærklering</a></li>
                 </ul>
             </section>
-            <section>
+            <section id="footer-socials">
                 <h3>SOSIALE MEDIER</h3>
                 <ul>
                     <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>

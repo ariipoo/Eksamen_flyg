@@ -19,9 +19,9 @@
             <nav>
                 <a href="index.html"><img src="img/fav.png" alt="logo"></a>
                 <ul id="right">
-                    <li><a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><a href="order.html"><i class="fa-regular fa-circle-user"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                    <li class="headericons"><a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li class="headericons"><a href="order.html"><i class="fa-regular fa-circle-user"></i></a></li>
+                    <li class="headericons"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
                 </ul>
                 <ul id="left">
                     <li><a href="#tips">Tips og inspirasjon</a></li>
@@ -34,125 +34,124 @@
         <main>
             <header>
                 <section id="hotel-slider">
-                    <button><i class="fa-regular fa-heart"></i></button>
-                    <button><i class="fa-solid fa-angle-left"></i></button>
-                    <button><i class="fa-solid fa-angle-right"></i></button>
-                    <button><i class="fa-regular fa-images"></i></button>
-                    <img src="img/landscape-2016308_640.jpg" alt="img1">
-                    <img src="img/beach-1836467_640.jpg" alt="img2">
-                    <img src="img/sea-4768869_1920.jpg" alt="img3">
-                    <img src="img/beach-666122_640.jpg" alt="img4">
-                    <img src="img/beach-6514331_640.jpg" alt="img5">
-                    <img src="img/holiday-2733322_1280.jpg" alt="img6">
+                    <picture class="slidephoto">
+                        <img src="img/landscape-2016308_640.jpg" alt="img1">
+                    </picture>
+                    <picture class="slidephoto">
+                        <img src="img/beach-1836467_640.jpg" alt="img2">
+                    </picture>
+                    <picture class="slidephoto">
+                        <img src="img/sea-4768869_1920.jpg" alt="img3">
+                    </picture>
+                    <picture class="slidephoto">
+                        <img src="img/beach-666122_640.jpg" alt="img4">
+                    </picture>
+                    <picture class="slidephoto">
+                        <img src="img/beach-6514331_640.jpg" alt="img5">
+                    </picture>
+                    <picture class="slidephoto">
+                        <img src="img/holiday-2733322_1280.jpg" alt="img6">
+                    </picture>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
+                    <button class="left" onclick="plusDivs(-1)"><i class="fa-solid fa-angle-left"></i></button>
+                    <button class="right" onclick="plusDivs(+1)"><i class="fa-solid fa-angle-right"></i></button>
+                    <button class="images"><i class="fa-regular fa-images"> 49</i></button>
                 </section>
-                <nav>
-                    <a href="#">Oversikt</a>
+                <nav id="hotel-nav">
+                    <a id="oversikt" href="#">Oversikt</a>
                     <a href="#">Fasiliteter</a>
                     <a href="#">Rom</a>
                 </nav>
             </header>
-            <section>
+            <section id="pargabeach">
                 <h2>Parga beach</h2>
-                <ul>
+                <ul id="sun">
                     <li><i class="fa-solid fa-sun"></i></li>
                     <li><i class="fa-solid fa-sun"></i></li>
                     <li><i class="fa-solid fa-sun"></i></li>
                     <li><i class="fa-solid fa-sun"></i></li>
                     <li><i class="fa-regular fa-sun"></i></li>
                 </ul>
-                <p>8.9</p>
-                <p>Fantastisk</p>
+                <p class="fantastisk"><span class="rating">8.9</span>Fantastisk</p>
                 <a href="#">Se alle anmeldelsener <i class="fa-solid fa-angle-right"></i></a>
             </section>
-            <section>
+            <section id="fasiliteter">
                 <h2>Fasiliteter</h2>
                 <p>Parga Beach tilbyr et tilsynelatende uuttømmelig utvalg av sport og aktiviteter og lokker til seg så vel eliteutøvere som aktive familier og hvardagsmosjonister - i alle aldre og på alle nivåer.</p>
-                <ul>
-                    <li><i class="fa-solid fa-paw"></i> Kjæledyr-vennlig</li>
-                    <li><i class="fa-solid fa-bell-concierge"></i> Romservice</li>
-                    <li><i class="fa-solid fa-mug-hot"></i> Frokost</li>
-                    <li><i class="fa-solid fa-martini-glass"></i> Bar</li>
-                    <li><i class="fa-solid fa-spa"></i> Spa</li>
-                    <li><i class="fa-solid fa-dumbbell"></i> Treningssenter</li>
+                <ul id="fasilitetliste">
+                    <li class="fl"><i class="fa-solid fa-paw"></i> Kjæledyr-vennlig</li>
+                    <li class="fl"><i class="fa-solid fa-bell-concierge"></i> Romservice</li>
+                    <li class="fl"><i class="fa-solid fa-mug-hot"></i> Frokost</li>
+                    <li class="fl"><i class="fa-solid fa-martini-glass"></i> Bar</li>
+                    <li class="fl"><i class="fa-solid fa-spa"></i> Spa</li>
+                    <li class="fl"><i class="fa-solid fa-dumbbell"></i> Treningssenter</li>
                 </ul>
                 <a href="#">Se alle eiendomsfasiliteter <i class="fa-solid fa-angle-right"></i></a>
             </section>
-            <section>
+            <section id="iframe">
                 <h2>Utforsk området</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5806.814338490057!2d20.38392041975443!3d39.28621533916043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135c632e49c7cda5%3A0x9406a292c1e28ae2!2sParga%20Beach%20Resort!5e0!3m2!1sen!2sno!4v1737832892167!5m2!1sen!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5806.814338490057!2d20.38392041975443!3d39.28621533916043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135c632e49c7cda5%3A0x9406a292c1e28ae2!2sParga%20Beach%20Resort!5e0!3m2!1sen!2sno!4v1737832892167!5m2!1sen!2sno" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
             <section id="room">
                 <h2>Velg rom</h2>
-                <article>
+                <article class="roomarticle">
                     <img src="img/beach-6514331_640.jpg" alt="room1">
                     <h3>Junior Suite</h3>
-                    <ul>
-                        <li>Plass til 2</li>
-                        <li>Queen-size seng</li>
-                    </ul>
-                    <p>8.9</p>
-                    <p>59 anmeldelser</p>
-                    <ul>
-                        <li>6789 kr</li>
+                    <p>Plass til 2 ● Queen-size seng</p>
+                    <p class="fantastisk"><span class="rating2">8.9</span>59 anmeldelser</p>
+                    <p class="price">6789 kr</p>
+                    <ul class="netter">
                         <li>for 3 netter, 1 rom</li>
                         <li>2 263 kr per natt</li>
                         <li>Ink moms og avgifter</li>
                     </ul>
                 </article>
-                <article>
+                <article class="roomarticle">
                     <img src="img/beach-6514331_640.jpg" alt="room2">
                     <h3>Junior Suite</h3>
-                    <ul>
-                        <li>Plass til 2</li>
-                        <li>Queen-size seng</li>
-                    </ul>
-                    <p>8.9</p>
-                    <p>59 anmeldelser</p>
-                    <ul>
-                        <li>6789 kr</li>
+                    <p>Plass til 2 ● Queen-size seng</p>
+                    <p class="fantastisk"><span class="rating2">8.9</span>59 anmeldelser</p>
+                    <p class="price">6789 kr</p>
+                    <ul class="netter">
                         <li>for 3 netter, 1 rom</li>
                         <li>2 263 kr per natt</li>
                         <li>Ink moms og avgifter</li>
                     </ul>
                 </article>
-                <article>
+                <article class="roomarticle">
                     <img src="img/beach-6514331_640.jpg" alt="room3">
                     <h3>Junior Suite</h3>
-                    <ul>
-                        <li>Plass til 2</li>
-                        <li>Queen-size seng</li>
-                    </ul>
-                    <p>8.9</p>
-                    <p>59 anmeldelser</p>
-                    <ul>
-                        <li>6789 kr</li>
+                    <p>Plass til 2 ● Queen-size seng</p>
+                    <p class="fantastisk"><span class="rating2">8.9</span>59 anmeldelser</p>
+                    <p class="price">6789 kr</p>
+                    <ul class="netter">
                         <li>for 3 netter, 1 rom</li>
                         <li>2 263 kr per natt</li>
                         <li>Ink moms og avgifter</li>
                     </ul>
                 </article>
-                <article>
+                <article class="roomarticle">
                     <img src="img/beach-6514331_640.jpg" alt="room4">
                     <h3>Junior Suite</h3>
-                    <ul>
-                        <li>Plass til 2</li>
-                        <li>Queen-size seng</li>
-                    </ul>
-                    <p>8.9</p>
-                    <p>59 anmeldelser</p>
-                    <ul>
-                        <li>6789 kr</li>
+                    <p>Plass til 2 ● Queen-size seng</p>
+                    <p class="fantastisk"><span class="rating2">8.9</span>59 anmeldelser</p>
+                    <p class="price">6789 kr</p>
+                    <ul class="netter">
                         <li>for 3 netter, 1 rom</li>
                         <li>2 263 kr per natt</li>
                         <li>Ink moms og avgifter</li>
                     </ul>
                 </article>
             </section>
+            <aside id="asidething">
+                <p><span>8733</span><br>2394 kr per natt</p>
+                <button>Velg rom</button>
+            </aside>
         </main>
         <footer id="global-footer">
-            <section>
-                <h3>SPRÅK</h3>
-                <ul>
+            <section id="footer-flag">
+                <h3 id="h3flag">SPRÅK</h3>
+                <ul id="flag-grid">
                     <li>
                         <img src="flag/sweden.png" alt="sweden">
                         Sverige
@@ -175,7 +174,7 @@
                     </li>
                 </ul>
             </section>
-            <section>
+            <section id="footer-pay">
                 <h3>BETALINGSMETODER</h3>
                 <ul>
                     <li><a href="#"><i class="fa-brands fa-cc-visa"></i></a></li>
@@ -185,10 +184,16 @@
                     <li><a href="#"><i class="fa-brands fa-cc-amazon-pay"></i></a></li>
                 </ul>
             </section>
-            <section>
+            <section id="footer-news">
                 <h3>NYHETER & TILBUD</h3>
+                <form class="fieldset" action="#">
+                    <label for="email">Meld deg på nyhetsbrev her                    </label>
+                    <input type="email" id="email" name="email" placeholder="ola@example.com...">
+                    <button type="button">Send</button>
+                </form>
+                <a href="#">Kjøp reisegavekort</a>
             </section>
-            <section>
+            <section id="footer-service">
                 <h3>KUNDESERVICE</h3>
                 <ul>
                     <li><a href="#">Spørsmål og Svar</a></li>
@@ -197,7 +202,7 @@
                     <li><a href="#">Tilgjenglighetsærklering</a></li>
                 </ul>
             </section>
-            <section>
+            <section id="footer-socials">
                 <h3>SOSIALE MEDIER</h3>
                 <ul>
                     <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
@@ -209,5 +214,46 @@
             </section>
         </footer>
     </div>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+        showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("slidephoto");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length} ;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+        }
+
+        ///////////////////////////////////////
+
+        let mybutton = document.getElementById("asidething");
+        let footer = document.getElementById("global-footer");
+        let targetsec = document.getElementById("room");
+        
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            let footerRect = footer.getBoundingClientRect();
+            let isFooterVisible = footerRect.top <= window.innerHeight;
+
+            let sectionRect = targetsec.getBoundingClientRect();
+            let isSectionVisible = sectionRect.top <= window.innerHeight && sectionRect.bottom >= 0;
+
+            if (isSectionVisible && !isFooterVisible) {
+                mybutton.style.display = "grid";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
