@@ -17,21 +17,21 @@
     <div id="container">
         <header id="global-header">
             <nav>
-                <a href="index.html"><img src="img/fav.png" alt="logo"></a>
+                <a href="index.html" id="logo"><img src="img/fav.png" alt="logo"></a>
                 <ul id="right">
                     <li class="headericons"><a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li class="headericons"><a href="order.html"><i class="fa-regular fa-circle-user"></i></a></li>
-                    <li class="headericons"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                    <li class="headericons" id="opprett1"><a href="order.html"><i class="fa-regular fa-circle-user"></i></a></li>
+                    <li class="headericons" id="minside"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
                 </ul>
                 <ul id="left">
-                    <li><a href="#tips">Tips og inspirasjon</a></li>
+                    <li><a href="index.html#tips">Tips og inspirasjon</a></li>
                     <li><a href="hotell.html">Hotell</a></li>
                     <li><a href="https://www.norwegian.no" target="_blank">Fly</a></li>
                     <li><a href="#global-footer">Kontakt</a></li>
                 </ul>
             </nav>
         </header>
-        <main>
+        <main id="order-main">
             <nav id="breadcrumbs">
                 <ol itemscope itemtype="https://schema.org/BreadcrumbList">
                     <li itemprop="itemListElement" itemscope
@@ -79,7 +79,7 @@
                   </ol>
             </nav>
             <section id="detailsseksjon">
-                <details>
+                <details id="detail">
                     <summary>Dine valg <i class="fa-solid fa-greater-than"></i></summary>
                     <img src="img/landscape-2016308_640.jpg" alt="beach">
                     <h2>Parga beach</h2>
@@ -107,20 +107,20 @@
                 <form>
                     <fieldset class="person">
                         <legend>Voksen 18+ Hovedbestiller</legend>
-                        <label>FORNAVN (IFØLGE PASS):</label>
-                        <input type="text" pattern="[A-Za-zæøåÆØÅ]{1,32}" required>
+                        <label id="one">FORNAVN (IFØLGE PASS):</label>
+                        <input type="text" id="one1" pattern="[A-Za-zæøåÆØÅ]{1,32}" required>
     
-                        <label>ETTERNAVN (IFØLGE PASS):</label>
-                        <input type="text" pattern="[A-Za-zæøåÆØÅ]{1,32}" required>
+                        <label id="two">ETTERNAVN (IFØLGE PASS):</label>
+                        <input type="text" id="two2" pattern="[A-Za-zæøåÆØÅ]{1,32}" required>
                         
-                        <label>FØDSELSDATO:</label>
+                        <label id="three">FØDSELSDATO:</label>
                         <ul class="dob">
                             <li><input type="number" placeholder="DD" min="01" max="31"></li>
                             <li><input type="number" placeholder="MM" min="01" max="12"></li>
                             <li><input type="number" placeholder="ÅÅÅÅ" min="1930" max="2006"></li>
                         </ul>
                         
-                        <label>KJØNN:</label>
+                        <label id="four">KJØNN:</label>
                         <ul class="radio">
                             <li>
                                 <input type="radio" name="gender" id="female1">
@@ -132,22 +132,22 @@
                             </li>
                         </ul>
     
-                        <label>E-POSTADRESSE:</label>
-                        <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                        <label id="five">E-POSTADRESSE:</label>
+                        <input type="email" id="five5" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
                         
-                        <label>TELEFONNUMMER:</label>
-                        <input type="tel" pattern="[0-9]{8,12}" required>
+                        <label id="six">TELEFONNUMMER:</label>
+                        <input type="tel" id="six6" pattern="[0-9]{8,12}" required>
                         
-                        <label>GATEADRESSE:</label>
-                        <input type="text" required>
+                        <label id="seven">GATEADRESSE:</label>
+                        <input type="text" id="seven7" required>
                         
-                        <label>POSTNUMMER:</label>
-                        <input type="number" min="1000" max="9999" required>
+                        <label id="eight">POSTNUMMER:</label>
+                        <input type="number" id="eight8" min="1000" max="9999" required>
                         
-                        <label>POSTSTED:</label>
-                        <input type="text" required>
+                        <label id="nine">POSTSTED:</label>
+                        <input type="text" id="nine9" required>
                         
-                        <label for="land">LAND:</label>
+                        <label for="land" id="ten">LAND:</label>
                         <select name="land" id="land">
                             <option value="" disabled selected>Velg et land</option>
                             <option value="norway">Norge</option>
@@ -156,22 +156,22 @@
                             <option value="finland">Finland</option>
                         </select>
                     </fieldset>
-                    <fieldset class="person">
+                    <fieldset class="person" id="person2">
                         <legend>Voksen 18+</legend>
-                        <label>FORNAVN (IFØLGE PASS):</label>
-                        <input type="text" pattern="[A-Za-zæøåÆØÅ]{1,32}" required>
+                        <label id="nr1">FORNAVN (IFØLGE PASS):</label>
+                        <input type="text" id="nrone" pattern="[A-Za-zæøåÆØÅ]{1,32}" required>
                         
-                        <label>ETTERNAVN (IFØLGE PASS):</label>
-                        <input type="text" pattern="[A-Za-zæøåÆØÅ]{1,32}" required>
+                        <label id="nr2">ETTERNAVN (IFØLGE PASS):</label>
+                        <input type="text" id="nrtwo" pattern="[A-Za-zæøåÆØÅ]{1,32}" required>
                         
-                        <label>FØDSELSDATO:</label>
+                        <label id="nr3">FØDSELSDATO:</label>
                         <ul class="dob">
                             <li><input type="number" placeholder="DD" min="01" max="31"></li>
                             <li><input type="number" placeholder="MM" min="01" max="12"></li>
                             <li><input type="number" placeholder="ÅÅÅÅ" min="1930" max="2006"></li>
                         </ul>
                                             
-                        <label>KJØNN:</label>
+                        <label id="nr4">KJØNN:</label>
                         <ul class="radio">
                             <li>
                                 <input type="radio" name="gender" id="female2">
@@ -238,7 +238,7 @@
                     <li><a href="#">Spørsmål og Svar</a></li>
                     <li><a href="#">Chat</a></li>
                     <li><a href="#">Kontakt</a></li>
-                    <li><a href="#">Tilgjenglighetsærklering</a></li>
+                    <li><a href="tilgjengelighetserklæring-flyg.pdf" target="_blank">Tilgjenglighetsærklering</a></li>
                 </ul>
             </section>
             <section id="footer-socials">
